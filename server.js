@@ -65,6 +65,13 @@
     });
  });
 
+ app.get('/projects',(req,res)=>
+ {
+    res.render('project.hbs',{
+        pageTitle: 'projects'
+    });
+ });
+
  app.get('/bad', (req,res)=>
  {
     res.send(
